@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin:0;
+  padding:0; 
+  font-family: 'Poppins';
+}
+body{
+  /* background:rgb(36, 8, 82); */
+  background: #8E0E00;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1F1C18, #8E0E00);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #1F1C18, #8E0E00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+.start{
+  padding: 20px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+h1{
+  color: yellow;
+  font-size: 60px;
+  font-weight: 600;
+
+}
+button{
+  background-color: #FFF;
+  color: black;
+  font-size: 25px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  font-weight: 400;
+  border-radius: 6px;
+  border: 2px solid rgb(255,149,51);
+  transition: transform .4s linear; 
+  box-shadow: 0 3px 10px rgb(0 ,0, 0, 0.8);
+ 
+}
+
+button:hover{
+  color: #FFF;
+  background: grey;
+  border: 2px solid black;
+  cursor: pointer;
+}
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.info{
+  display: flex;
+  flex-direction: column;
+  width:180px;
+  height:250px;
+  padding:1rem;
+  margin-left:4rem;
+  margin-bottom: 1rem;
+  border:2px solid grey;
+  border-radius: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  transition: transform .4s linear; 
+  box-shadow: 0 3px 10px rgb(0 ,0, 0, 0.8);
+}
+.info:hover{
+  transform:scale(1.1);
+}
+.info img{
+  border-radius: 100px;
+}
+.info .name{
+  color:yellow;
+  font-size: 1.4rem;
+  font-weight: 500;
+  
+}
+.info p{
+  color:whitesmoke;
+  font-size:0.9rem;
+  font-weight: 500;
+}
